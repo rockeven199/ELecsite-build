@@ -1,0 +1,192 @@
+@font-face {
+  font-family: fontstyle;
+  src: url('../font/清松手写体-100font.com/清松手写体2.ttf');
+}
+
+@font-face {
+  font-family: fontstyle2;
+  src: url('../font/思源字体/SourceHanSansSC-ExtraLight.otf');
+}
+
+/* 设置第三方登录图片 */
+img:hover {
+  box-shadow: 0px 0px 0.9375rem whitesmoke;
+}
+
+img {
+  box-shadow: 0px 0px 0.125rem black;
+  border-radius: 1.25rem;
+  width: 2rem;
+  height: 2rem;
+}
+
+/* 表单设置（用户名、密码） */
+input {
+  outline: none;
+  border: none;
+  margin-top: 0.625rem;
+  width: 12.5rem;
+  height: 1.5625rem;
+}
+
+#input_usrname:focus {
+  border-radius: 17px;
+  transition: all 1s;
+}
+
+#input_password:focus {
+  border-radius: 17px;
+  transition: all 1s;
+}
+
+a {
+  padding: 0.15rem;
+}
+
+/* 最外层设置 */
+.public_main {
+  margin: none;
+  margin: 0px;
+  height: 100%;
+  overflow: hidden;
+  background: linear-gradient(to left, #9cecfb, #65c7f7, #0052d4);
+}
+
+/*主体浮动设置*/
+.public_main_flex {
+  display: flex;
+  flex: 1;
+}
+
+/* 第二层文字div浮动设置 */
+.public_text_main_flex {
+  display: flexbox;
+  width: 44.75rem;
+  height: 25rem;
+  margin-right: 9%;
+  margin-left: 13%;
+  margin-top: 10%;
+}
+
+/* 设置文字部分样式 */
+.public_text_font_style {
+  border: 0.1px solid whitesmoke;
+  text-align: center;
+  padding: 10% 0px;
+  margin-top: 20%;
+  border-radius: 0.625rem;
+  box-shadow: 0.625rem 0.625rem 2.5rem black;
+}
+
+/* 具体文字设置 */
+.public_next_text_font_style {
+  font-size: 18px;
+  color: white;
+  line-height: 30px;
+}
+
+/* 主登录面板浮动设置 */
+.public_login_flex {
+  display: flexbox;
+  width: 44.75rem;
+  height: 25rem;
+  margin-top: 10%;
+  margin-right: 13%;
+}
+
+/* 第二层登录div浮动设置 */
+.public_next_login_main {
+  border: 0.2px solid white;
+  margin: 13% 4%;
+  padding-bottom: 2%;
+  border-radius: 0.9375rem;
+  box-shadow: 0.1875rem 0.1875rem 1.25rem black;
+}
+
+/* 字体上层整体设置 */
+.public_font_last_font_style {
+  padding: 2% 0px;
+  margin-bottom: -2%;
+}
+
+/* span1设置 */
+.span1 {
+  font-size: 50px;
+  color: white;
+  font-family: fontstyle;
+}
+
+/* span2设置 */
+.span2 {
+  font-size: 40px;
+  padding: 0rem 0.4375rem;
+}
+
+/* span3设置 */
+.span3 {
+  font-size: 15px;
+  font-family: fontstyle2;
+}
+
+/* form表单设置 */
+.public_form {
+  padding: none
+}
+
+/* 输入框具体设置 */
+.input1 {
+  transition: all 1s;
+  text-align: center;
+}
+
+.input2 {
+  transition: all 1s;
+  text-align: center;
+}
+
+/* 提交和跳转按钮布局设置 */
+.span_input_button_flex {
+  display: inline-flexbox;
+}
+
+/* 提交按钮设置 */
+.input_submit:hover {
+  box-shadow: 0px 0px 5px black inset;
+}
+
+.input_submit {
+  width: 3.125rem;
+  height: 1.325rem;
+  border-radius: 0.3125rem;
+  border: 2px solid whitesmoke;
+  padding-bottom: 1.25rem;
+  margin-bottom: 3%;
+  background: #65c7f7;
+}
+
+/* 跳转按钮设置 */
+.input_link:hover {
+  box-shadow: 0px 0px 5px black inset;
+}
+
+.input_link {
+  width: 9.375rem;
+  height: 1.325rem;
+  border-radius: 0.3125rem;
+  border: 2px solid whitesmoke;
+  padding-bottom: 1.25rem;
+  background: #65c7f7;
+}
+
+/* 版权设置 */
+.public_copy {
+  position: fixed;
+  bottom: 0px;
+  left: 45%;
+  font-weight: 100;
+  font-size: 10px;
+}
+
+.public_next_copy {
+  padding-bottom: 5px;
+}

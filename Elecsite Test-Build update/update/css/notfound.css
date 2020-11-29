@@ -1,0 +1,26 @@
+/* 主体设置 */
+.public_main {
+    margin: none;
+    margin: 0px;
+    height: 100%;
+    overflow: hidden;
+    background: linear-gradient(to left, #9cecfb, #65c7f7, #0052d4);
+}
+
+/* 】链接设置 */
+a {
+    color: white;
+}
+
+/* 版权设置 */
+.public_copy {
+    position: fixed;
+    bottom: 0px;
+    left: 45%;
+    font-weight: 100;
+    font-size: 10px;
+}
+
+.public_next_copy {
+    padding-bottom: 5px;
+}
