@@ -4,12 +4,28 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>首页-Elecsite</title>
+    <title>Document</title>
 </head>
 
 <body>
-
+    <button id="bangding">绑定</button>
+    <button id="jiebang">解绑</button>
+    <div id="block" style="width: 400px;height: 400px;background: grey;"></div>
 </body>
-
+<script type="text/javascript" src="./js/jquery-3.5.1.js"></script>
+<script type="text/javascript">
+    $(document).ready(function () {
+        $("#bangding").click(function () {
+            alert("绑定了嗷~~");
+            $("#block").bind("mouseover", function () {
+                alert("你把指针放上去了");
+            });
+        });
+        $("#jiebang").click(function () {
+            $("#block").unbind("mouseover");
+            alert("解绑了嗷~~");
+        })
+    });
+</script>
 
 </html>
