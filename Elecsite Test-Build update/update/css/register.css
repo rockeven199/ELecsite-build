@@ -1,0 +1,9 @@
+/*CSS Doucment*/
+#form div input {
+    margin-bottom: 20px;
+}
+
+input {
+    outline: none;
+    border: 5px solid white;
+}
