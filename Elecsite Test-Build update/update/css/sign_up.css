@@ -1,0 +1,85 @@
+.panel {
+    background-color: #c05850;
+    width: 30vw;
+    padding-bottom: 2.5vh;
+    margin-top: 1%;
+}
+
+.subbtn {
+    outline: none;
+    border: none;
+    width: 4vw;
+    background-color: #993366;
+    color: #ffffff;
+}
+
+.title #chinese_translate {
+    margin-top: 15px;
+    font-size: 13px;
+    font-weight: 170;
+    position: absolute;
+
+}
+
+.title #english_translate {
+    font-size: 13px;
+    font-weight: 170;
+    position: relative;
+}
+
+.title {
+    font-weight: 300;
+    font-size: 45px;
+    margin-top: 9%;
+    margin-bottom: 3%;
+}
+
+.title :hover {
+    text-shadow: 0px 0px 2px black;
+}
+
+
+
+.item {
+    width: 30vw;
+    border: none;
+    background-color: #c05850 transparent;
+    line-height: 9vh;
+    position: relative;
+}
+
+.item input {
+    height: 5%;
+    width: 70%;
+    background-color: #c05850;
+    outline: none;
+    border: none;
+    border-bottom: white solid 2px;
+}
+
+.item label {
+    top: -5px;
+    transition: all 0.4s linear;
+    color: white;
+    font-size: 15px;
+    font-weight: 100;
+    text-align: left;
+    left: 4.5vw;
+    position: absolute;
+}
+
+.item input:focus+label {
+    top: -20px;
+    font-size: 12px;
+}
+
+.item input:valid+label {
+    top: -20px;
+    font-size: 12px;
+}
+
+.item>#Email:valid+label {
+    top: -20px;
+    font-size: 12px;
+    border-bottom-color: #2EFE2E;
+}

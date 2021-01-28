@@ -1,19 +1,23 @@
 /* 主体设置 */
-.public_main {
-    margin: none;
-    margin: 0px;
-    height: 100%;
-    overflow: hidden;
-    background: linear-gradient(to left, #9cecfb, #65c7f7, #0052d4);
+.main {
+    margin: 23vh;
+    background-image: linear-gradient(135deg, #F6D242 10%, #FF52E5 100%);
 }
 
-/* 】链接设置 */
+/* 提示设置 */
+.tips {
+    text-align: center;
+    padding-top: 8%;
+    color: white;
+    margin-bottom: 40vh;
+}
+
 a {
     color: white;
 }
 
 /* 版权设置 */
-.public_copy {
+.copy {
     position: fixed;
     bottom: 0px;
     left: 45%;
@@ -21,7 +25,7 @@ a {
     font-size: 10px;
 }
 
-.public_next_copy {
+.next_copy {
     padding-bottom: 5px;
 }
 

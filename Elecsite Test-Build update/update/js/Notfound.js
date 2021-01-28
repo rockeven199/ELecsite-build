@@ -7,7 +7,4 @@ function refer() {
     document.getElementById('tipone').innerHTML = t;
     document.getElementById('tiptwo').innerHTML = t;
     t--;
-
 }
-
-

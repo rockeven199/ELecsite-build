@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>注册-Elecsite</title>
+    <link href="./css/sign_up.css" rel="stylesheet" type="text/css">
+</head>
+
+<body style="background-color: rgba(192, 88, 80, 0.8);">
+    <div align="center">
+        <div class="title">
+            <span>Elecsite</span>
+            <span id="chinese_translate">注册</span>
+            <span id="english_translate">Register</span>
+        </div>
+        <form action="" class="panel">
+            <div class="item">
+                <input type="text" id="usrname" title="" onkeyup="CheckName()" autocomplete="off" required>
+                <label for="">用户名</label><br>
+            </div>
+            <div class="item">
+                <input type="password" id="pwd1" onkeyup="Ckeckkey()" autocomplete="off" required>
+                <label for="">密码</label>
+            </div>
+            <div class="item">
+                <input type="password" id="pwd2" onkeyup="Checkkey()" autocomplete="off" required>
+                <label for="">请再次输入密码</label>
+            </div>
+            <div class="item">
+                <input type="email" id="Email" required>
+                <label for="">Email</label>
+            </div>
+            <input type="submit" class="subbtn" id="subbtn" value="注册">
+        </form>
+    </div>
+</body>
+<script type="text/javascript" src="./js/sing_up.js">
+</script>
+
+</html>
