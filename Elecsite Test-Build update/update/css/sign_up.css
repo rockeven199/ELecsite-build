@@ -1,5 +1,6 @@
 .panel {
-    background-color: #c05850;
+    border-radius: 8px;
+    background-color: rgba(255, 255, 255, 0.3);
     width: 30vw;
     padding-bottom: 2.5vh;
     margin-top: 1%;
@@ -9,41 +10,57 @@
     outline: none;
     border: none;
     width: 4vw;
-    background-color: #993366;
+    background-color: rgba(255, 53, 147, 0.26);
     color: #ffffff;
 }
 
 .title #chinese_translate {
+    margin-left: 9.5px;
     margin-top: 15px;
     font-size: 13px;
-    font-weight: 170;
+    font-weight: 500;
     position: absolute;
 
 }
 
 .title #english_translate {
     font-size: 13px;
-    font-weight: 170;
+    font-weight: 500;
     position: relative;
 }
 
 .title {
-    font-weight: 300;
+    font-weight: 900;
+    transition: all 0.2s;
+    width: 20%;
+    border-radius: 5px;
+    font-weight: 400;
     font-size: 45px;
     margin-top: 9%;
     margin-bottom: 3%;
+    color: white;
+    color: rgba(11, 88, 255, 0.7);
+    -webkit-text-stroke: 0.2px white;
 }
 
-.title :hover {
-    text-shadow: 0px 0px 2px black;
+
+.title:hover {
+    transition: all 0.2s;
+    color: rgba(255, 253, 253, 0.7);
 }
 
+input:hover {
+    box-shadow: 0px 0px 5px white;
+}
 
+button:hover {
+    box-shadow: 0px 0px 5px white;
+}
 
 .item {
     width: 30vw;
     border: none;
-    background-color: #c05850 transparent;
+    background-color: rgba(255, 255, 255, 0.);
     line-height: 9vh;
     position: relative;
 }
@@ -51,18 +68,18 @@
 .item input {
     height: 5%;
     width: 70%;
-    background-color: #c05850;
+    background-color: rgba(255, 255, 255, 0.3);
     outline: none;
     border: none;
     border-bottom: white solid 2px;
 }
 
 .item label {
-    top: -5px;
+    top: 0px;
     transition: all 0.4s linear;
-    color: white;
+    color: black;
     font-size: 15px;
-    font-weight: 100;
+    font-weight: 600;
     text-align: left;
     left: 4.5vw;
     position: absolute;
@@ -82,4 +99,28 @@
     top: -20px;
     font-size: 12px;
     border-bottom-color: #2EFE2E;
+}
+
+#email:invalid {
+    font-size: 12px;
+}
+
+/* #body {
+    background-image: url('../img/bgimg2.jpg');
+} */
+
+/* 版权,联系方式设置 */
+/* 绝对定位，左、右各为0对齐*/
+.copy {
+    position: absolute;
+    bottom: 0px;
+    left: 0px;
+    right: 0px;
+    font-weight: 100;
+    font-size: 10px;
+}
+
+.next_copy {
+    padding-bottom: 5px;
+    display: flexbox;
 }

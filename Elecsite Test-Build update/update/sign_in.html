@@ -8,61 +8,61 @@
 </head>
 <!-- 文字部分 -->
 
-<body class="main">
-	<div class="main_flex">
-		<div class="text_main_flex">
-			<div class="text_font_style">
-				<div class="next_text_font_style">
-					成功路上没有捷径可走，只有不断的失败与探索
-				</div>
+<body class="main" style="background-image: url('./img/bgimg.jpg');">
+	<div class="LoginPanel_flex">
+		<div align="center" class="Next_LoginPanel">
+			<div class="title_font">
+				<span class="title">Elecsite</span>
+				<span>
+					<span style="position: absolute;font-size: 12px;margin-top: 22px;" id="title">登录</span>
+					<span style="font-size: 12px;" id="title">LogIn</span>
+				</span>
 			</div>
-		</div>
-		<!-- 登录框部分 -->
-		<div class="login_flex">
-			<div align="center" class="next_login_main">
-				<div class="font_last_font_style">
-					<span class="span1">Elecsite</span>
-				</div>
-				<hr style="background: rgba(255,255,255,0.4);outline: none;border: none;" size="6px">
-				<div class="form">
-					<form action="" method="get">
-						<input type="text" id="input_usrname" placeholder="请输入Email" class="input1" /><br />
-						<input type=" password" id="input_password" placeholder="请输入密码" class="input2" /><br />
-						<span class="span_input_button_flex">
-							<input type="submit" value="登录" class="input_submit" onclick="submit()" />
-					</form>
-					<a href="./sign_up.html"><input type="button" value="还没有账号？点我注册" class="input_link"></a>
-					</span>
-					<hr style="background: rgba(255,255,255,0.4);outline: none;border: none;" size="6px">
-				</div>
-				<!-- 第三方登录部分 -->
-				<div style="margin-top: none;">
-					<a href="https://github.com"><img src="./img/icon/github.png" /></a>
-					<a href="https://google.com"><img src="./img/icon/google.png" /></a>
-					<a href="https://facebook.com"><img src="./img/icon/icon_facebook.png" "></a>
-					<a href=" https://twitter.com"><img src="./img/icon/twitter.png" /></a>
-					<a href="https://weibo.com"><img src="./img/icon/weibo.png" /></a>
-					<a href="https://weixin.qq.com/"><img src="./img/icon/微信.png" /></a>
-				</div>
+			<hr width="10%" size="6px" style="border:none;">
+			<div>
+				<form action="" method="post" id="submit" style="line-height: 8.5vh;">
+					<div class="item" id="item">
+						<label class="tips_usr" id="tips_usr">用户名</label></label>
+						<input type="text" id="input_usr" required /><br />
+					</div>
+					<div class="item" id="item">
+						<label class="tips_pwd" id="tips_pwd">密码</label>
+						<input type="password" id="input_pwd" required /><br />
+					</div>
+					<span class="span_input_button_flex">
+				</form>
+				<span style="display: inline;">
+					<button type="submit" class="input_submit" onclick="Submit()" form="submit" />登录</button>
+					<a href="./sign_up.html"><input type="button" value="注册" class="input_link"></a>
+				</span>
+			</div>
+			<hr width="10%" size="6px" style="border:none" />
+			<!-- 第三方登录部分 -->
+			<div class="login_other">
+				<a href="https://google.com"><img src="./img/icon/google.png" alt="google" /></a>
+				<a href="https://facebook.com"><img src="./img/icon/icon_facebook.png" alt="fackbook" /></a>
+				<a href="https://twitter.com"><img src="./img/icon/twitter.png" alt="twitter" /></a>
+				<a href="https://weibo.com"><img src="./img/icon/weibo.png" alt="weibo" /></a>
 			</div>
 		</div>
 	</div>
 	<!-- 版权信息 -->
 	<div class="copy">
-		<div>
-			<span>Copyright&copy;2020-2020 Elecsite</span>
+		<hr>
+		<div style="padding-top: 1.5%;">
+			<span>Copyright&copy;2020-2020 Elecsite&trade;</span>
 		</div>
-		<div class=next_copy">
-			<span style="color: white;">联系我们:<a href="mailto:2092056202agq@gmail.com"
-					style="text-decoration: none;color: white;padding-left: 10px;">Gmail<span
-						style="color: white;padding: 0px 10px;">|</span></a><a class="href=" mailto:2092056202@qq.com"
-					style="color: white;text-decoration: none;">QQ邮箱</a>
+		<div class="next_copy" style="padding-bottom: 1.5%;">
+			<span style="color: white;">联系我们:
+				<a href="mailto:2092056202agq@gmail.com" style="text-decoration: none;color: white;padding-left: 10px;">
+					Gmail</a>
+				<span style="color: white;padding: 0px 10px;">|</span>
+				<a href="mailto:2092056202@qq.com" style="color: white;text-decoration: none;">QQ邮箱</a>
 			</span>
 		</div>
 	</div>
-	</div>
-	</div>
 </body>
-<script src="./js/login.js" type="text/javascript"></script>
+<script src="./js/jquery-3.5.1.js" type="text/javascript"></script>
+<script src="./js/sign_in.js" type="text/javascript"></script>
 
 </html>

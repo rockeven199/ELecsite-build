@@ -1,221 +1,193 @@
 @font-face {
-  font-family: fontstyle;
-  src: url('../font/清松手写体-100font.com/清松手写体2.ttf');
-}
-
-@font-face {
   font-family: fontstyle2;
   src: url('../font/思源字体/SourceHanSansSC-ExtraLight.otf');
 }
 
 /* 设置第三方登录图片 */
 img:hover {
-  transform: rotate(360deg) scale(1.35);
   transition: 1.2s all;
-  border: 3px solid transparent;
+  border: 1px inset rgba(255, 255, 255, 0.5);
   border-radius: 1.25rem;
 }
 
 img {
   transition: 1.2s all;
-  padding: 2px;
-  border: 3px inset rgba(255, 255, 255, 0.5);
+  padding: 5px;
+  border: 1px solid transparent;
   border-radius: 1.25rem;
   width: 2rem;
   height: 2rem;
 }
 
-/* 表单设置（用户名、密码） */
-input {
-  border: 1.5px inset rgba(255, 255, 255, 0.5);
-  outline: none;
-  border: none;
-  margin-top: 0.625rem;
-  width: 12.5rem;
-  height: 1.5625rem;
-}
-
-#input_usrname:focus {
-  border: 2.5px inset rgba(255, 255, 255, 0.5);
-  border-radius: 15px;
-  transition: all 1s;
-}
-
-#input_password:focus {
-  border: 2.5px inset rgba(255, 255, 255, 0.5);
-  border-radius: 15px;
-  transition: all 1s;
-}
-
-a {
-  padding: 0.15rem;
-}
-
-/* 最外层设置 */
+/*主体设置*/
 .main {
-  margin: none;
-  margin: 0px;
-  height: 100%;
+  min-width: 1700px;
+  min-height: 795px;
   overflow: hidden;
-  background-image: linear-gradient(135deg, #F6D242 10%, #FF52E5 100%);
 }
 
-/*主体浮动设置*/
 .main_flex {
   display: flex;
-  flex: 1;
-}
-
-/* 第二层文字div浮动设置 */
-.text_main_flex {
-  display: flexbox;
-  width: 44.75rem;
-  height: 25rem;
-  margin-right: 9%;
-  margin-left: 13%;
-  margin-top: 10%;
-}
-
-/* 设置文字部分样式\背景 */
-
-.text_font_style {
-  background: rgba(255, 255, 255, 0.4);
-  border: 5px outset;
-  text-align: center;
-  padding: 10% 0px;
-  margin-top: 30%;
-  border-radius: 10px;
-  box-shadow: 0px 0px 5px black;
-}
-
-/* 具体文字设置 */
-.next_text_font_style {
-  font-size: 18px;
-  color: black;
-  line-height: 30px;
-  font-family: fontstyle2;
+  flex: 0.7;
 }
 
 /* 主登录面板浮动设置 */
-.login_flex {
+.LoginPanel_flex {
+  right: 0px;
+  left: 0px;
   display: flexbox;
-  width: 44.75rem;
-  height: 25rem;
-  margin-top: 10%;
-  margin-right: 13%;
-  margin-bottom: 10%;
+  width: 100%;
+  position: absolute;
+  transform: translate(17.5%, 50%);
 }
 
 /* 第二层登录div浮动\背景设置 */
-.next_login_main {
-  border: 5px outset rgba(255, 255, 255, 0.7);
-  margin: 13% 4%;
-  background: rgba(255, 255, 255, 0.35);
+.Next_LoginPanel {
+  left: 0px;
+  right: 0px;
+  /* border: 5px outset rgba(255, 255, 255, 0.7); */
   padding-bottom: 2%;
+  padding: 10px 0px;
   border-radius: 10px;
-  box-shadow: 0px 0px 5px black;
+  /* top: 0; */
+  margin-left: 15%;
+  width: 35%;
+  background-color: rgba(255, 255, 255, 0.2);
+  box-shadow: 0px 0px 10px black;
 }
 
-/* 字体上层整体设置 */
-.font_last_font_style {
-  padding: 2% 0px;
-  margin-bottom: -2%;
-}
-
-/* span1设置 */
-.span1 {
-  font-size: 60px;
-  color: black;
-  font-family: fontstyle;
-}
-
-/* span2设置 */
-.span2 {
-  font-size: 40px;
-  padding: 0rem 0.4375rem;
-}
-
-/* span3设置 */
-.span3 {
-  font-size: 15px;
+/* 标题设置 */
+.title {
+  color: white;
+  font-weight: 600;
+  font-size: 45px;
   font-family: fontstyle2;
 }
 
-/* form表单设置 */
-.form {
-  padding: none;
-}
-
-/* 输入框具体设置 */
-.input1 {
-  border: 2.5px inset rgba(255, 255, 255, 0.5);
-  transition: all 1.1s;
-  text-align: center;
+.title_font {
+  width: 50%;
   border-radius: 5px;
-  background: rgba(255, 255, 255, 0.5);
+  background: rgba(15, 147, 255, 0.2);
 }
 
-.input2 {
-  background: rgba(255, 255, 255, 0.5);
-  border-radius: 5px;
-  border: 2.5px inset rgba(255, 255, 255, 0.5);
-  transition: all 1.1s;
-  text-align: center;
-}
-
-/* 提交和跳转按钮布局设置 */
-.span_input_button_flex {
-  display: inline-flexbox;
+#title {
+  color: white;
+  font-weight: 300;
+  font-family: fontstyle2;
 }
 
 /* 提交按钮设置 */
 .input_submit:hover {
-  box-shadow: 0px 0px 15px whitesmoke inset;
+  transition: all 0.5s;
+  box-shadow: 0px 0px 10px white;
 }
 
 .input_submit:active {
+  transition: all 0.3s;
   border: 2.5px inset rgba(255, 255, 255, 0.5);
   box-shadow: 0px 0px 25px white inset;
 }
 
 .input_submit {
+  transition: all 0.5s;
   border: 2.5px outset rgba(255, 255, 255, 0.5);
-  background: rgba(255, 255, 255, 0.5);
-  width: 3.125rem;
-  height: 1.325rem;
-  padding-bottom: 1.25rem;
+  background: transparent;
+  width: 60px;
+  font-size: 14px;
   border-radius: 5px;
-  margin-bottom: 3%;
 }
 
 /* 跳转按钮设置 */
 .input_link:hover {
-  box-shadow: 0px 0px 15px whitesmoke inset;
+  transition: all 0.3s;
+  box-shadow: 0px 0px 10px white;
 }
 
 .input_link:active {
+  transition: all 0.3s;
   border: 2.5px inset rgba(255, 255, 255, 0.5);
   box-shadow: 0px 0px 25px white inset;
 }
 
+.span_input_button_flex {
+  /* 提交和跳转按钮布局设置 */
+  display: inline-flex;
+}
+
 .input_link {
-  background: rgba(255, 255, 255, 0.5);
-  width: 9.375rem;
-  height: 1.325rem;
+  background-color: transparent;
+  transition: all 0.5s;
+  font-size: 14px;
+  width: 60px;
   border-radius: 5px;
-  padding-bottom: 1.25rem;
   border: 2.5px outset rgba(255, 255, 255, 0.5);
 }
 
-/* 版权设置 */
+/* 版权联系方式设置 */
 .copy {
-  position: fixed;
-  bottom: 0px;
-  left: 45%;
+  left: 0;
+  right: 0;
+  position: absolute;
+  bottom: 0;
   font-weight: 100;
   font-size: 10px;
+  text-align: center;
 }
 
 .next_copy {
+  display: flexbox;
   padding-bottom: 5px;
+}
+
+/* 第三方图标设置 */
+.login_other {
+  background-color: rgba(255, 255, 255, 0.17);
+}
+
+
+#input {
+  /* 密码*/
+  outline: none;
+  width: 40%;
+  border-top: none;
+  border-left: none;
+  border-right: none;
+  border-bottom: 2px solid rgba(255, 255, 255, 0.9);
+  background-color: transparent;
+}
+
+
+/* 输入提示 */
+label {
+  font-weight: 600;
+  color: black;
+  transition: all 0.5s;
+  bottom: 1px;
+  font-size: 16px;
+  position: absolute;
+}
+
+
+#input_pwd {
+  outline: none;
+  width: 50%;
+  border-top: none;
+  border-left: none;
+  border-right: none;
+  border-bottom: 2px solid rgba(255, 255, 255, 0.9);
+  background-color: rgba(255, 255, 255, 0.5);
+}
+
+#input_usr {
+  outline: none;
+  width: 50%;
+  border-top: none;
+  border-left: none;
+  border-right: none;
+  border-bottom: 2px solid rgba(255, 255, 255, 0.9);
+  background-color: rgba(255, 255, 255, 0.5);
+}
+
+.item {
+  position: relative;
 }

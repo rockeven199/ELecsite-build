@@ -1,0 +1,7 @@
+{
+    "liveServer.settings.port": 5501,
+    //改变注释颜色
+    "editor.tokenColorCustomizations": {
+        "comments": "#45b787" // 注释
+    }, //如果后面还加内容，记得块末用逗号隔开
+}

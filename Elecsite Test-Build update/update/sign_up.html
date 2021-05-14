@@ -8,35 +8,56 @@
     <link href="./css/sign_up.css" rel="stylesheet" type="text/css">
 </head>
 
-<body style="background-color: rgba(192, 88, 80, 0.8);">
+<body style="background-image: url('./img/bgimg2.jpg');">
     <div align="center">
         <div class="title">
             <span>Elecsite</span>
-            <span id="chinese_translate">注册</span>
-            <span id="english_translate">Register</span>
+            <span id="chinese_translate" style="color:white">注册</span>
+            <span id="english_translate" style="color: white;">Register</span>
         </div>
         <form action="" class="panel">
             <div class="item">
                 <input type="text" id="usrname" title="" onkeyup="CheckName()" autocomplete="off" required>
-                <label for="">用户名</label><br>
+                <label>用户名</label><br>
             </div>
             <div class="item">
                 <input type="password" id="pwd1" onkeyup="Ckeckkey()" autocomplete="off" required>
-                <label for="">密码</label>
+                <label>密码</label>
             </div>
             <div class="item">
                 <input type="password" id="pwd2" onkeyup="Checkkey()" autocomplete="off" required>
-                <label for="">请再次输入密码</label>
+                <label>确认密码</label>
             </div>
             <div class="item">
                 <input type="email" id="Email" required>
-                <label for="">Email</label>
+                <label id="labelEmail">Email</label>
             </div>
             <input type="submit" class="subbtn" id="subbtn" value="注册">
+            <button type="button" class="subbtn"><a style="color:white;text-decoration: none;"
+                    href="./sign_in.html">登录</a></button>
         </form>
+        <!-- 版权信息 -->
+        <div class="copy">
+            <hr>
+            <div>
+                <span style="color: white;">Copyright&copy;2020-2020 Elecsite</span>
+            </div>
+            <div class="next_copy">
+                <span style="color: white;">联系我们:
+                    <a href="mailto:2092056202agq@gmail.com"
+                        style="text-decoration: none;color: white;padding-left: 10px;">
+                        Gmail</a>
+                    <span style="color: white;padding: 0px 10px;">|</span>
+                    <a href="mailto:2092056202@qq.com" style="color: white;text-decoration: none;">QQ邮箱</a>
+                </span>
+            </div>
+        </div>
     </div>
 </body>
-<script type="text/javascript" src="./js/sing_up.js">
-</script>
+<script type="text/javascript" src="./js/jquery-3.5.1.js"></script>
+<script type="text/javascript" src="./js/sign_up.js"></script>
+<script type="text/javascript" src="./js/sing_up_bg.js"></script>
+
+
 
 </html>

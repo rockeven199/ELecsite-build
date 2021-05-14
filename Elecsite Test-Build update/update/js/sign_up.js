@@ -1,8 +1,7 @@
 function Checkkey() {
     var pwd1 = document.getElementById('pwd1');
     var pwd2 = document.getElementById('pwd2');
-    var a = null;
-    if (pwd1.value == pwd2.value && (pwd1.value & pwd2.value !== "")) {
+    if (pwd1.value == pwd2.value && pwd2.value == pwd1.value) {
         pwd1.style.borderBottomColor = "#2EFE2E";
         pwd2.style.borderBottomColor = "#2EFE2E";
         pwd1.title = "两次密码输入一致";
@@ -22,7 +21,6 @@ function Checkkey() {
     }
     pwd1, pwd2.style.transition = "all 0.5s linear";
 }
-
 function CheckName() {
     var submit = document.getElementById('subbtn');
     var usrname = document.getElementById('usrname');
@@ -37,7 +35,7 @@ function CheckName() {
         usrname.style.borderBottomColor = "#2EFE2E";
         usrname.style.transition = "all 0.5s linear";
         usrname.style.cursor = "pointer";
-        usrname.title = "长度未超过5字节";
         subbtn.disabled = "";
     }
 }
+

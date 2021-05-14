@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0,use">
+    <title>Document</title>
+    <link type="text/css" href="./css/phone_sign_up.css" rel="stylesheet" />
+    <script type="text/javascript" src="../js/jquery-3.5.1.js"></script>
+</head>
+
+<body>
+    <div class="postion_flex_div">
+        <div class="next_postion_flex_div">
+            <div class="form">
+                <h3>Elecsite|注册</h3>
+                <form method="GET" name="submitform">
+                    <div class="option_tips">
+                        <label id="usrname_label">用户名</label>
+                        <input type="text" id="usrname" required autocomplete="name"><br>
+                    </div>
+                    <div class="option_tips">
+                        <label id="pwd1_label">密码</label>
+                        <input type="password" id="pwd1" required autocomplete="off">
+                    </div>
+                    <div class="option_tips">
+                        <label id="pwd2_label">请再次输入密码</label>
+                        <input type="password" id="pwd2" required autocomplete="off">
+                    </div>
+                    <button type="submit" formaction="submitform">提交</button>
+                </form>
+            </div>
+        </div>
+    </div>
+    <div class="copy">
+        <hr>
+        <div>
+            <span>Copyright&copy;2020-2020 Elecsite</span>
+            <br>
+            <span class="next_copy">
+                <span style="color: black;">联系我们:
+                    <a href="mailto:2092056202agq@gmail.com" style="text-decoration: none;color: black;">
+                        Gmail</a>
+                    <span style="color: black;padding: 0px 10px;">|</span>
+                    <a href="mailto:2092056202@qq.com" style="color: black;text-decoration: none;">QQ邮箱</a>
+                </span>
+            </span>
+        </div>
+    </div>
+</body>
+<script type="text/javascript">
+    $(function () {
+        //表单动画  username
+        $("#usrname").click(function () {
+            $("#usrname_label")
+                .css('font-size', '12px')
+                .css('top', '0px')
+                .css('color', 'white')
+                .css('transition', 'all 0.7s');
+        });
+        $("#usrname").blur(function () {
+            if ($("#usrname").val() == "") {
+                $("#usrname_label")
+                    .css('font-size', '15px')
+                    .css('top', '19.5px')
+                    .css('color', 'black')
+                    .css('transition', 'all 0.7s');
+            }
+            else {
+                $("#username_label")
+                    .css('top', '0px');
+            }
+
+        });
+        // pwd1
+        $("#pwd1").click(function () {
+            $("#pwd1_label")
+                .css('font-size', '12px')
+                .css('top', '-1px')
+                .css('color', 'white')
+                .css('transition', 'all 0.7s');
+        });
+        $("#pwd1").blur(function () {
+            if ($("#pwd1").val() == "") {
+                $("#pwd1_label")
+                    .css('font-size', '15px')
+                    .css('top', '19.5px')
+                    .css('color', 'black')
+                    .css('transition', 'all 0.7s');
+            }
+            else {
+                $("#pwd1_label")
+                    .css('top', '0px');
+            }
+        });
+        // pwd2
+        $("#pwd2").click(function () {
+            $("#pwd2_label")
+                .css('font-size', '12px')
+                .css('top', '-1px')
+                .css('color', 'white')
+                .css('transition', 'all 0.7s');
+        });
+        $("#pwd2").blur(function () {
+            if ($("#pwd2").val() == "") {
+                $("#pwd2_label")
+                    .css('font-size', '15px')
+                    .css('top', '19.5px')
+                    .css('color', 'black')
+                    .css('transition', 'all 0.7s');
+            }
+            else {
+                $("#pwd2_label")
+                    .css('top', '0px');
+            }
+        });
+        var Height = window.innerHeight * 0.1;
+        $('div', 'span').height(Height);
+    });
+</script>
+
+</html>
