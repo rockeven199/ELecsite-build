@@ -8,49 +8,47 @@
 </head>
 <!-- 文字部分 -->
 
-<body class="main" style="background-image: url('./img/bgimg.jpg');">
-	<div class="LoginPanel_flex">
-		<div align="center" class="Next_LoginPanel">
-			<div class="title_font">
-				<span class="title">Elecsite</span>
-				<span>
-					<span style="position: absolute;font-size: 12px;margin-top: 22px;" id="title">登录</span>
-					<span style="font-size: 12px;" id="title">LogIn</span>
-				</span>
-			</div>
-			<hr width="10%" size="6px" style="border:none;">
-			<div>
-				<form action="" method="post" id="submit" style="line-height: 8.5vh;">
-					<div class="item" id="item">
-						<label class="tips_usr" id="tips_usr">用户名</label></label>
-						<input type="text" id="input_usr" required /><br />
-					</div>
-					<div class="item" id="item">
-						<label class="tips_pwd" id="tips_pwd">密码</label>
-						<input type="password" id="input_pwd" required /><br />
-					</div>
-					<span class="span_input_button_flex">
-				</form>
-				<span style="display: inline;">
-					<button type="submit" class="input_submit" onclick="Submit()" form="submit" />登录</button>
-					<a href="./sign_up.html"><input type="button" value="注册" class="input_link"></a>
-				</span>
-			</div>
-			<hr width="10%" size="6px" style="border:none" />
-			<!-- 第三方登录部分 -->
-			<div class="login_other">
-				<a href="https://google.com"><img src="./img/icon/google.png" alt="google" /></a>
-				<a href="https://facebook.com"><img src="./img/icon/icon_facebook.png" alt="fackbook" /></a>
-				<a href="https://twitter.com"><img src="./img/icon/twitter.png" alt="twitter" /></a>
-				<a href="https://weibo.com"><img src="./img/icon/weibo.png" alt="weibo" /></a>
-			</div>
+<body class="main" style="background: url('./img/bgimg.jpg');background-repeat: no-repeat;background-size:100%;">
+	<div class="panel" align="center">
+		<div class="title_font">
+			<span class="title">Elecsite</span>
+			<span>
+				<span style="position: absolute;font-size: 12px;margin-top: 22px;color: black;font-weight: 1000;"
+					id="title">登录</span>
+				<span style="font-size: 12px;" id="title">LogIn</span>
+			</span>
+		</div>
+		<div>
+			<form action="" method="post" id="submit" style="line-height: 10vh;">
+				<div class="item" id="item">
+					<label class="tips_usr" id="tips_usr">用户名</label></label>
+					<input type="text" id="input_usr" required /><br />
+				</div>
+				<div class="item" id="item">
+					<label class="tips_pwd" id="tips_pwd">密码</label>
+					<input type="password" id="input_pwd" required /><br />
+				</div>
+				<span class="span_input_button_flex">
+			</form>
+			<span style="display: inline;">
+				<button type="submit" class="input_submit" onclick="Submit()" form="submit" />登录</button>
+				<a href="./sign_up.html"><input type="button" value="没有账号？注册一个" class="input_link"></a>
+			</span>
+		</div>
+		<hr size="6px" id="hr1" style="border: none;width: 5%;">
+		<!-- 第三方登录部分 -->
+		<div class="login_other">
+			<a href="https://google.com"><img src="./img/icon/google.png" alt="google" /></a>
+			<a href="https://facebook.com"><img src="./img/icon/icon_facebook.png" alt="fackbook" /></a>
+			<a href="https://twitter.com"><img src="./img/icon/twitter.png" alt="twitter" /></a>
+			<a href="https://weibo.com"><img src="./img/icon/weibo.png" alt="weibo" /></a>
 		</div>
 	</div>
 	<!-- 版权信息 -->
 	<div class="copy">
-		<hr>
-		<div style="padding-top: 1.5%;">
-			<span>Copyright&copy;2020-2020 Elecsite&trade;</span>
+		<hr size="8px" style="background: rgba(255, 255, 255, 0.986);margin: 0;border: none;width: 100;">
+		<div style="padding-top: 1.5%;color: white;">
+			<span>Copyright&copy;2020-2020 Elecsite</span>
 		</div>
 		<div class="next_copy" style="padding-bottom: 1.5%;">
 			<span style="color: white;">联系我们:

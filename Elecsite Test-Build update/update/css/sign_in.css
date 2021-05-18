@@ -20,54 +20,25 @@ img {
 }
 
 /*主体设置*/
-.main {
-  min-width: 1700px;
-  min-height: 795px;
-  overflow: hidden;
-}
-
-.main_flex {
-  display: flex;
-  flex: 0.7;
-}
 
 /* 主登录面板浮动设置 */
-.LoginPanel_flex {
-  right: 0px;
-  left: 0px;
-  display: flexbox;
-  width: 100%;
-  position: absolute;
-  transform: translate(17.5%, 50%);
-}
+
 
 /* 第二层登录div浮动\背景设置 */
-.Next_LoginPanel {
-  left: 0px;
-  right: 0px;
-  /* border: 5px outset rgba(255, 255, 255, 0.7); */
-  padding-bottom: 2%;
-  padding: 10px 0px;
-  border-radius: 10px;
-  /* top: 0; */
-  margin-left: 15%;
-  width: 35%;
-  background-color: rgba(255, 255, 255, 0.2);
-  box-shadow: 0px 0px 10px black;
-}
+
 
 /* 标题设置 */
 .title {
   color: white;
   font-weight: 600;
-  font-size: 45px;
+  font-size: 40px;
   font-family: fontstyle2;
 }
 
 .title_font {
+  margin-bottom: 5%;
   width: 50%;
   border-radius: 5px;
-  background: rgba(15, 147, 255, 0.2);
 }
 
 #title {
@@ -90,8 +61,8 @@ img {
 
 .input_submit {
   transition: all 0.5s;
-  border: 2.5px outset rgba(255, 255, 255, 0.5);
-  background: transparent;
+  border: 2.5px outset rgba(255, 255, 255, 0.712);
+  background: rgba(255, 255, 255, 0.5);
   width: 60px;
   font-size: 14px;
   border-radius: 5px;
@@ -110,21 +81,22 @@ img {
 }
 
 .span_input_button_flex {
-  /* 提交和跳转按钮布局设置 */
   display: inline-flex;
 }
 
+/* 提交和跳转按钮布局设置 */
 .input_link {
-  background-color: transparent;
+  background-color: rgba(255, 255, 255, 0.5);
   transition: all 0.5s;
   font-size: 14px;
-  width: 60px;
+  width: 10vw;
   border-radius: 5px;
-  border: 2.5px outset rgba(255, 255, 255, 0.5);
+  border: 2.5px outset rgba(255, 255, 255, 0.712);
 }
 
 /* 版权联系方式设置 */
 .copy {
+  background: rgba(255, 255, 255, 0.5);
   left: 0;
   right: 0;
   position: absolute;
@@ -190,4 +162,14 @@ label {
 
 .item {
   position: relative;
+}
+
+.panel {
+  margin-right: 30%;
+  margin-left: 30%;
+  margin-top: 10%;
+  margin-bottom: 10%;
+  border: 1px solid white;
+  display: flexbox;
+  width: 40%;
 }

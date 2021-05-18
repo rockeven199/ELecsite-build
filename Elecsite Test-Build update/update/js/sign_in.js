@@ -44,8 +44,8 @@ $(function () {
             }
         });
     })
-    $("hr")
-        .css("width", "99.5%")
-        .css("transition", "all 2s ")
+    $("#hr1")
+        .css("width", "100%")
+        .css("transition", "all 1.8s ")
         .css("background", "#008cffb0")
 });

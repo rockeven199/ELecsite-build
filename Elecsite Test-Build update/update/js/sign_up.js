@@ -38,4 +38,8 @@ function CheckName() {
         subbtn.disabled = "";
     }
 }
-
+$(function () {
+    $("hr")
+        .css("width", "100%")
+        .css("transition", "all 1.7s")
+})

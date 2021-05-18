@@ -14,7 +14,7 @@
     color: #ffffff;
 }
 
-.title #chinese_translate {
+#chinese_translate {
     margin-left: 9.5px;
     margin-top: 15px;
     font-size: 13px;
@@ -23,10 +23,9 @@
 
 }
 
-.title #english_translate {
+#english_translate {
     font-size: 13px;
     font-weight: 500;
-    position: relative;
 }
 
 .title {
@@ -39,8 +38,8 @@
     margin-top: 9%;
     margin-bottom: 3%;
     color: white;
-    color: rgba(11, 88, 255, 0.7);
-    -webkit-text-stroke: 0.2px white;
+    /* color: rgba(11, 88, 255, 0.7);
+    -webkit-text-stroke: 0.2px white; */
 }
 
 
@@ -112,6 +111,7 @@ button:hover {
 /* 版权,联系方式设置 */
 /* 绝对定位，左、右各为0对齐*/
 .copy {
+    background: rgba(255, 255, 255, 0.3);
     position: absolute;
     bottom: 0px;
     left: 0px;
@@ -121,6 +121,6 @@ button:hover {
 }
 
 .next_copy {
-    padding-bottom: 5px;
+    padding-bottom: 1%;
     display: flexbox;
 }
